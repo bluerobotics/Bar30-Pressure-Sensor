@@ -1736,7 +1736,7 @@ Please make sure your boards conform to these design rules.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="C1" library="resistor" package="C0402" value="2.2uF" x="10.82005" y="6.037228125" smashed="yes" rot="R180"/>
+<element name="C1" library="resistor" package="C0402" value="1uF" x="10.82005" y="6.037228125" smashed="yes" rot="R180"/>
 <element name="Q1" library="SparkFun-DiscreteSemi" package="SOT323" value="BSS138" x="3.457015625" y="6.36045" smashed="yes">
 <attribute name="PROD_ID" value="TRANS-11151" x="3.457015625" y="6.36045" size="1.778" layer="27" display="off"/>
 </element>
@@ -1757,7 +1757,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="U$6" library="BR-Eagle-Library" package="PAD-1.5X3MM" value="PAD1.5X3MM" x="3.872015625" y="7.10545" rot="MR0"/>
 <element name="U$7" library="BR-Eagle-Library" package="BR-LOGO-SMALL" value="LOGOBR-LOGO-S" x="8.296571875" y="5.731128125" rot="MR0"/>
 <element name="U$8" library="BlueRobotics-Main" package="SC70-5L" value="VREG-MIC5365" x="10.85054375" y="8.583109375" smashed="yes" rot="R180"/>
-<element name="C2" library="resistor" package="C0402" value="2.2uF" x="8.495978125" y="10.65720625" smashed="yes" rot="R90"/>
+<element name="C2" library="resistor" package="C0402" value="1uF" x="8.495978125" y="10.65720625" smashed="yes" rot="R90"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -1788,7 +1788,8 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="15.24" y="0"/>
 <vertex x="0" y="0"/>
 </polygon>
-<via x="10.3228125" y="11.02294375" extent="1-16" drill="0.3556"/>
+<via x="10.824746875" y="10.596034375" extent="1-16" drill="0.3556"/>
+<via x="9.766515625" y="11.887265625" extent="1-16" drill="0.3556"/>
 </signal>
 <signal name="SCL_LV">
 <contactref element="U$1" pad="3"/>
@@ -1856,16 +1857,14 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="3.724359375" y1="3.010221875" x2="5.280009375" y2="3.010221875" width="0.254" layer="1"/>
 <wire x1="5.280009375" y1="3.010221875" x2="6.295403125" y2="4.025615625" width="0.254" layer="1"/>
 <contactref element="U$1" pad="2"/>
-<contactref element="U$8" pad="1"/>
+<contactref element="U$8" pad="5"/>
 <wire x1="7.492015625" y1="5.52045" x2="8.107015625" y2="6.13545" width="0.254" layer="1"/>
 <wire x1="11.47005" y1="6.037228125" x2="11.47005" y2="5.43839375" width="0.254" layer="1"/>
 <wire x1="11.47005" y1="5.43839375" x2="11.200509375" y2="5.168853125" width="0.254" layer="1"/>
 <wire x1="11.200509375" y1="5.168853125" x2="9.0736125" y2="5.168853125" width="0.254" layer="1"/>
 <wire x1="9.0736125" y1="5.168853125" x2="8.107015625" y2="6.13545" width="0.254" layer="1"/>
-<wire x1="11.47005" y1="6.037228125" x2="11.47005" y2="6.330628125" width="0.254" layer="1"/>
-<wire x1="11.47005" y1="6.330628125" x2="12.07014375" y2="6.930721875" width="0.254" layer="1"/>
-<wire x1="12.07014375" y1="6.930721875" x2="12.07014375" y2="8.963509375" width="0.254" layer="1"/>
-<wire x1="12.07014375" y1="8.963509375" x2="11.50054375" y2="9.533109375" width="0.254" layer="1"/>
+<wire x1="11.47005" y1="6.037228125" x2="11.47005" y2="7.602615625" width="0.254" layer="1"/>
+<wire x1="11.47005" y1="7.602615625" x2="11.50054375" y2="7.633109375" width="0.254" layer="1"/>
 </signal>
 <signal name="VCC">
 <contactref element="R3" pad="2"/>
@@ -1878,14 +1877,20 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="7.087015625" y1="9.72045" x2="7.087015625" y2="10.01545" width="0.254" layer="1"/>
 <wire x1="7.087015625" y1="10.01545" x2="7.067015625" y2="10.01545" width="0.254" layer="1"/>
 <wire x1="7.067015625" y1="10.01545" x2="5.787015625" y2="11.29545" width="0.254" layer="1"/>
-<contactref element="U$8" pad="4"/>
+<contactref element="U$8" pad="1"/>
 <contactref element="U$8" pad="3"/>
 <contactref element="C2" pad="1"/>
 <wire x1="7.087015625" y1="10.01545" x2="8.487734375" y2="10.01545" width="0.254" layer="1"/>
 <wire x1="8.487734375" y1="10.01545" x2="8.495978125" y2="10.00720625" width="0.254" layer="1"/>
 <wire x1="8.495978125" y1="10.00720625" x2="9.726446875" y2="10.00720625" width="0.254" layer="1"/>
-<wire x1="9.726446875" y1="10.00720625" x2="10.20054375" y2="9.533109375" width="0.254" layer="1"/>
-<wire x1="10.20054375" y1="9.533109375" x2="10.20054375" y2="7.633109375" width="0.254" layer="1"/>
+<wire x1="11.50629375" y1="9.527359375" x2="11.50054375" y2="9.533109375" width="0.254" layer="1"/>
+<wire x1="10.20054375" y1="9.533109375" x2="9.726446875" y2="10.00720625" width="0.254" layer="1"/>
+<wire x1="11.50054375" y1="9.533109375" x2="11.50054375" y2="10.9094875" width="0.254" layer="1"/>
+<wire x1="11.50054375" y1="10.9094875" x2="11.1764375" y2="11.23359375" width="0.254" layer="1"/>
+<wire x1="11.1764375" y1="11.23359375" x2="10.331909375" y2="11.23359375" width="0.254" layer="1"/>
+<wire x1="10.331909375" y1="11.23359375" x2="9.695728125" y2="10.5974125" width="0.254" layer="1"/>
+<wire x1="9.695728125" y1="10.5974125" x2="9.695728125" y2="10.037925" width="0.254" layer="1"/>
+<wire x1="9.695728125" y1="10.037925" x2="9.726446875" y2="10.00720625" width="0.254" layer="1"/>
 </signal>
 <signal name="SCL_HV">
 <contactref element="Q2" pad="3"/>

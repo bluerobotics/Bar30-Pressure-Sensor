@@ -1747,10 +1747,10 @@ Please make sure your boards conform to these design rules.</description>
 <element name="R3" library="resistor" package="R0402" value="10K" x="5.787015625" y="10.64545" smashed="yes" rot="R90"/>
 <element name="R4" library="resistor" package="R0402" value="10K" x="6.295403125" y="3.375615625" smashed="yes" rot="R90"/>
 <element name="R5" library="resistor" package="R0402" value="10K" x="3.957015625" y="9.23545" smashed="yes" rot="R90"/>
-<element name="U$1" library="BR-Eagle-Library" package="MS5837" value="MS583730BA" x="7.107015625" y="7.13545" smashed="yes" rot="R90">
-<attribute name="NAME" x="4.857015625" y="5.13545" size="0.6096" layer="25" rot="R90"/>
+<element name="U$1" library="BR-Eagle-Library" package="MS5837" value="MS583730BA" x="7.107015625" y="7.13545" smashed="yes" rot="R90"/>
+<element name="D1" library="SparkFun-DiscreteSemi" package="SOD523" value="" x="7.087015625" y="10.32045" smashed="yes" rot="R90">
+<attribute name="VALUE" x="8.077615625" y="9.63465" size="0.4064" layer="27" rot="R90"/>
 </element>
-<element name="D1" library="SparkFun-DiscreteSemi" package="SOD523" value="" x="7.087015625" y="10.32045" rot="R90"/>
 <element name="U$3" library="BR-Eagle-Library" package="PAD-1.5X3MM" value="PAD1.5X3MM" x="7.047015625" y="3.89045" rot="MR270"/>
 <element name="U$4" library="BR-Eagle-Library" package="PAD-1.5X3MM" value="PAD1.5X3MM" x="7.087015625" y="10.01545" rot="MR270"/>
 <element name="U$5" library="BR-Eagle-Library" package="PAD-1.5X3MM" value="PAD1.5X3MM" x="10.242015625" y="7.10545" rot="MR0"/>

@@ -10123,7 +10123,6 @@ LETTER landscape</description>
 <sheets>
 <sheet>
 <plain>
-<text x="52.578" y="-61.722" size="3.81" layer="94">BAR30 Pressure Sensor</text>
 <text x="-33.02" y="2.54" size="2.54" layer="94" align="center">Level Converters for 5V Tolerance</text>
 <text x="83.82" y="2.54" size="2.54" layer="94" align="center">Solder Pad Connections</text>
 <text x="78.74" y="71.12" size="2.54" layer="94" align="center">MS5837-30BA</text>

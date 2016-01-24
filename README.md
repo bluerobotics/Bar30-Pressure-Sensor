@@ -10,7 +10,7 @@ The schematic and board layout are designed in EagleCAD.
 
 The Bar30 pressure sensor is a high-pressure, high-resolution pressure sensor that is sealed from the water and ready to install in a watertight enclosure. With 0.2 bar resolution, it has an amazing depth measurement resolution of 2mm in the water column!
 
-The sensor is the Measurement Specialties MS5837-30BA, which can measure up to 30 bar (300m depth) and communicates over I2C. We’ve added level switching circuitry so that it can operate on both 3.3V and 5V I2C lines. It comes standard with a 4-pin DF13 connector and compatible with most DroneCode compatible boards including the APM2.6, PixHawk, and others.
+The sensor is the Measurement Specialties MS5837-30BA, which can measure up to 30 bar (300m depth) and communicates over I2C. It comes standard with a 4-pin DF13 connector and compatible with most DroneCode compatible boards including the APM2.6, PixHawk, and others.
 
 ## Features
 

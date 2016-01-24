@@ -16,24 +16,56 @@ The sensor is the Measurement Specialties MS5837-30BA, which can measure up to 3
 
 * Measure up to 300m water depth with 2mm resolution
 * Reverse polarity protection
-* 5V tolerant circuitry
 * Standard DF13 connector for connection to DroneCode boards such as APM, PixHawk, Navio2, etc.
+* Sealed in a bulkhead penetrator for easy installation into any 10mm hole
 
 ## Compatibility
 
+The Bar30 sensor is compatible with any device with 3.3V I<sup>2</sup>C logic. When using with a 5V device, such as an Arduino Uno, it is necessary to use a logic level converter.
+
 ##Configuration
 
-[Image with arrows]
+--
 
 ##Ratings
 
-| Value                              | Minimum | Nominal | Maximum | Unit    |
-|-----------------------------------:|:-------:|:-------:|:-------:|:--------|
-| Supply Voltage                     | 2       | 3.3     | 5.5     | V       |
-| I<sup>2</sup>C (SCL & SDA)         | 2       | 3.3     | 5.5     | V       |
-| Current Consumption                |         |         | 2       | mA      |
-| Pressure Measurement (sensor)      |         |         | 30      | Bar     |
-| Maximum Device Pressure            |         |         | 50      | Bar     |
+|      **Electrical**       |
+| ------------- | --------- |
+| **Item** | **Condition** | **Value** |
+| Supply Voltage| -- | 2.5-5.5 volts |
+| I<sup>C</sup>C Logic Voltage | -- | 2.5-3.6 volts |
+| Peak Current   | -- | 1.25 mA   |
+| ------------- | --------- |
+|                **Pressure**                  		 |
+| ------------- | ---------------------------------- |
+| **Item** | **Condition** | **Value** |
+| Maximum Mechanical Pressure | -- | 50 bar |
+|Operating Pressure| -- |0-30 bar [up to 1000 ft (300 m) in water]|
+|Absolute Accuracy  (0-40&deg;C) | From 0-6 bar | +/- 50 mbar 	(51 cm in freshwater)		 |
+|  				   | From 0-20 bar | +/- 100 mbar (102 cm in freshwater)			 |
+|				   | From 0-30 bar | +/- 200 mbar (204 cm in freshwater)    	 |
+|Absolute Accuracy (-25-85&deg;C)| From 0-6 bar | +/- 100 mbar 	(102 cm in freshwater)		 |
+|  				   | From 0-20 bar | +/- 200 mbar (204 cm in freshwater)			 |
+|				   | From 0-30 bar | +/- 400 mbar (408 cm in freshwater)     	 |
+| ---------------- | ------------------------------- |
+|            **Temperature**            			 |
+| ------------- | ------------- | ------------- |
+| **Item** | **Condition** | **Value** |
+| Operating Temperature | -- | -20 to +85&deg;C |
+|Storage Temperature | -- | -40 to +85&deg;C                        |
+|Absolute Accuracy   | From 0-10 bar at 0-60&deg;C | +/- 1.5&deg;C      |
+|                    | From 0-30 bar at -20-85&deg;C |  +/- 4.0&deg;C   |
+|  **Physical**  |
+| Wire Colors | Green - I<sup>2</sup>C Clock (SCL) |
+|             | White - I<sup>2</sup>C Data (SDA)  |
+|             | Red - Positive (2.5-5.5V) |
+|             | Black - Ground          |
+| ------------|-------------------------|
+| Overall Length | 37 mm |
+| Thread Size    | M10x1.5 20 mm threaded |
+| Recommended Through Hole Size | 10-11 mm |
+| Wrench Flats | 16 mm |
+|----------------------|
 
 ##Example Setups
 
@@ -52,3 +84,4 @@ The Bar30 Pressure Sensor Hardware Design is released under the MIT License.
 
 0.0 - Under development
 0.1 - First production version (marked with rev4)
+0.2 - Minor layout changes (marked with rev5)
